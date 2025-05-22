@@ -1,8 +1,10 @@
 use futures::{channel::mpsc::Sender, SinkExt, StreamExt};
 use reqwasm::websocket::{futures::WebSocket, Message};
-use yew_agent::Dispatched;
-use crate::services::event_bus::{EventBus, Request};
+
 use wasm_bindgen_futures::spawn_local;
+use yew_agent::Dispatched;
+
+use crate::services::event_bus::{EventBus, Request};
 
 pub struct WebsocketService {
     pub tx: Sender<String>,

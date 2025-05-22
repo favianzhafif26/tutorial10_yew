@@ -1,16 +1,18 @@
 #![recursion_limit = "512"]
 
-use std::cell::RefCell;
-use std::rc::Rc;
 mod components;
 mod services;
-use components::login::Login;
-use components::chat::Chat;
+
+use std::cell::RefCell;
+use std::rc::Rc;
 
 use wasm_bindgen::prelude::*;
 use yew::functional::*;
 use yew::prelude::*;
 use yew_router::prelude::*;
+
+use components::chat::Chat;
+use components::login::Login;
 
 // When the `wee_alloc` feature is enabled, this uses `wee_alloc` as the global
 // allocator.
@@ -48,11 +50,11 @@ fn main() -> Html {
 
     html! {
         <ContextProvider<User> context={(*ctx).clone()}>
-        <BrowserRouter>
-            <div class="flex w-screen h-screen">
-                <Switch<Route> render={Switch::render(switch)}/>
-            </div>
-        </BrowserRouter>
+            <BrowserRouter>
+                <div class="flex w-screen h-screen">
+                    <Switch<Route> render={Switch::render(switch)}/>
+                </div>
+            </BrowserRouter>
         </ContextProvider<User>>
     }
 }
