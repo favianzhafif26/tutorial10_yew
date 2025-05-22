@@ -24,3 +24,6 @@ This repository is divided to branches that correspond to the blog post sections
 ![Screenshot 2025-05-22 141519](https://github.com/user-attachments/assets/34f7a3b2-8091-4a27-951f-6fd934d05fb9)
 
 ![Screenshot 2025-05-22 141511](https://github.com/user-attachments/assets/74ff431e-9776-452e-9ead-445f86627a76)
+
+## 3.2
+![image](https://github.com/user-attachments/assets/75e3d6aa-453a-4098-95c2-a373d03b233c)
